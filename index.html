@@ -151,7 +151,7 @@
   <div class="container is-max-desktop">
     <!-- Method -->
     <!-- <br /> -->
-    <div style="text-align:center">
+    <!-- <div style="text-align:center">
       <h2 class="title is-3">Our Contributions</h2>
     </div>
     <div class="content has-text-justified">
@@ -162,7 +162,7 @@
         <p>(3) We provide the first benchmark SoMoSiMu-Bench for social movement simulation evaluation, 
             including a data collection consisting of three real-world movements and corresponding evaluation methods. 
             Experiment results and analysis demonstrate the effectiveness of our method.</p>
-    <br> <br>
+    <br> <br> -->
     <div class="columns is-centered">
         <!-- <img style='height: auto; width: 90%; object-fit: contain' src="static/images/f2.png"
           alt="overview_image"> -->
@@ -191,9 +191,9 @@
         <br>
         <P>To comprehensively evaluate the effectiveness of simulation, we consider both micro-level evaluation and macro-level evaluation, focusing on
             individual user alignment and systemic outcomes respectively. </P>
-        <p>Micro Alignment Evaluation: simulate in single rounds by providing authentic contextual information to each core user agent and assess their decision-making, 
+        <p><b>Micro Alignment Evaluation</b>: simulate in single rounds by providing authentic contextual information to each core user agent and assess their decision-making, 
             in terms of <b>stance</b>, <b>content</b> and <b>behavior</b>.</p>
-        <P>Macro System Evaluation: quantify the attitude distribution in a complete multi-round simulation, considering both <b>static attitude distribution</b> 
+        <P><b>Macro System Evaluation</b>: quantify the attitude distribution in a complete multi-round simulation, considering both <b>static attitude distribution</b> 
         and <b>time series of the average attitude</b>.</P>
 
       </div>
@@ -237,11 +237,11 @@
             <div class="content has-text-justified">
               <p>
                 <b>PROMPT:</b> 
-                <pre style="white-space: pre-wrap; word-break: keep-all;">You are a journalist. Please write a piece of news.</pre>
+                <pre style="white-space: pre-wrap; word-break: keep-all;">You are using the social media Twitter. You might need to performing reaction to the observation. You need to answer what you will do to the observations based on the following information:\n(1) You are John. John is a highly active and moderately influential activist on social media. He is a liberal progressive and anti-Republican. He frequently shares and discusses ideas and opinions, often challenging or dismissing the ideas of others. He is passionate about topics he strongly believes in and wants to share conversations for the benefit of others.\n(2) Current time is 2018-01-06 20:00:00\n(3) The news you got is "1. A month ago, President Donald Trump enthusiastically endorsed Roy Moore, the Alabama Senate candidate accused of sexual misconduct, on Twitter.\\n2. At the Golden Globes Awards ceremony in Los Angeles, most guests showed up dressed in black out of solidarity with the MeToo and Time\'s Up movement and the victims of sexual violence."\n(4) Your history memory is \n(5) The twitter page you can see is \n(6) The notifications you can see are \n\nIn terms of how you actually perform the action, you take action by calling functions. Currently, there are the following functions that can be called.\n- do_nothing(): Do nothing. There is nothing that you like to respond to.\n- post(content): Post a tweet. `content` is the sentence that you will post.\n- retweet(content, author, original_tweet_id, original_tweet). Retweet or quote an existing tweet in your twitter page. `content` is the statements that you attach when retweeting. If you want to say nothing, set `content` to None. `author` is the author of the tweet that you want to retweet, it should be the concrete name. `original_tweet_id` and `original_tweet` are the id and content of the retweeted tweet.\n- reply(content, author, original_tweet_id). Reply to an existing tweet in your twitter page or reply one of replies in your notifications, but don\'t reply to yourself and those not in your tweet page. `content` is what you will reply to the original tweet or other comments. `author` is the author of the original tweet or comment that you want to reply to. `original_tweet_id` is the id of the original tweet.\n- like(author, original_tweet_id). Press like on an existing tweet in your twitter page. `author` is the author of the original tweet that you like. `original_tweet_id` is the id of the original tweet.\n\nCall one function at a time, please give a thought before calling these actions and choose Support, Neutral, and Oppose to describe your current attitudes towards the Metoo movement, i.e., use the following format strictly:\n\n[OPTION 1]\nThought: None of the observation attract my attention, I need to:\nAction: do_nothing()\nAttitude: xxx\n\n[OPTION 2]\nThought: due to `xxx`, I need to:\nAction: post(content="yyy")\nAttitude: xxx\n\n[OPTION 3]\nThought: due to `xxx`, I need to:\nAction: retweet(content="yyy", author="zzz", original_tweet_id="0", original_tweet="kkk")\nAttitude: xxx\n\n[OPTION 4]\nThought: due to `xxx`, I need to:\nAction: reply(content="yyy", author="zzz", original_tweet_id="0")\nAttitude: xxx\n\n[OPTION 5]\nThought: due to `xxx`, I need to:\nAction: like(author="zzz", original_tweet_id="1")\nAttitude: xxx\n\nNow begin your actions. Remember only write one function call after `Action:`.\nBased on the above history, what will you, John, do next?</pre>
               </p>
               <p>
                 <b>RESPONSE:</b><br>
-                <pre style="white-space: pre-wrap; word-break: keep-all;">Headline: New Study Reveals Surprising Benefits of Gardening for Mental Health. Date: October 12, 2022. In a fresh breakthrough highlighting the importance of wellbeing, a landmark study conducted by experts at the renowned Garden Research Institute (GRI) has unearthed remarkable benefits of gardening on mental health. The study, conducted over a span of three years, reveals how nurturing nature can play a pivotal role in combating stress, anxiety, and depression. Gardening enthusiasts and mental health professionals have long acknowledged the therapeutic effects of spending time amid plants and flowers, but this study delves deeper to emphasize the extent of the positive mental health impact. The GRI study included over 2,000 participants from diverse age groups, socio-economic backgrounds, and geographical locations. Researchers used a combination of quantitative surveys and qualitative interviews to gather a comprehensive understanding of the psychological benefits that gardening brings. The findings unveiled an array of advantages that can be attested to gardening. First and foremost, participants reported a significant decrease in stress levels. The act of gardening was shown to encourage relaxation, helping individuals unwind and find solace amidst the natural world. Moreover, the study demonstrated that gardening had the power to stabilize moods, with over 81% of participants experiencing reduced feelings of anxiety and depression. Interestingly, the therapeutic connection between people and plants wasn’t limited to the emotional realm. The GRI study indicated a tangible positive correlation between gardening and physical well-being. Physical ailments such as high blood pressure, sleep disorders, and chronic pain were reported with lower frequency among participants who engaged in regular gardening activities. Elaborating on the findings, Dr. Emily Stevens, lead researcher at GRI, emphasized, “Gardening provides a multi-faceted approach to improving mental health. It combines the benefits of physical exercise, connecting with nature, and nurturing living organisms, which ultimately empowers individuals to regain a sense of control and purpose in their lives, leading to improved mental well-being.” The study also highlighted the social aspects associated with gardening, especially within community gardens or allotments. Participants expressed a higher sense of community belonging, reduced feelings of isolation, and increased social interactions. Gardening, it seems, has the potential to bring people together, fostering a stronger sense of unity and shared purpose.</pre>
+                <pre style="white-space: pre-wrap; word-break: keep-all;">post(content="The solidarity shown at the Golden Globes Awards ceremony is inspiring. It\'s time to stand up against sexual violence and support the victims. #MeToo #TimesUp")</pre>
               </p>
             </div>
           </div>
