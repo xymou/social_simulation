@@ -83,7 +83,7 @@
             <div class="column has-text-centered">
               <div class="publication-links">
                 <span class="link-block">
-                  <a href="https://arxiv.org/pdf/xxxx.xxxxx.pdf" class="external-link button is-normal is-rounded is-dark">
+                  <a href="https://arxiv.org/pdf/2402.16333.pdf" class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fas fa-file-pdf"></i>
                     </span>
@@ -91,7 +91,7 @@
                   </a>
                 </span>
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/xxxx.xxxxx" class="external-link button is-normal is-rounded is-dark">
+                  <a href="https://arxiv.org/abs/2402.16333" class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="ai ai-arxiv"></i>
                     </span>
@@ -324,29 +324,65 @@
     <div class="columns is-centered">
         <div class="column is-full-width">
           <div style="text-align:center">
-            <h2 class="title is-3">Examples of the Overall Simulation Results.</h2>
+            <h2 class="title is-3">Examples of the Overall Simulation Results</h2>
           </div>
-          <div class="columns is-centered">
-            <!-- <img style='height: auto; width: 90%; object-fit: contain' src="static/images/f2.png"
-              alt="overview_image"> -->
+          <!-- <div class="columns is-centered">
               <figure>
                 <img src="static/images/case-metoo.png" alt="fm">
               </figure>
+          </div> -->
+          <div class="control has-icons-left">
+            <div class="select is-medium is-info is-rounded ">
+              <select id="dropdown" onchange="changeContent()" style="width:auto">
+                <option value="example_7">Example of the Overall Simulation Results of <i>Hybrid w/ BC</i> on <i>Metoo</i> Movement</option>
+                <option value="example_8">Example of the Overall Simulation Results of <i>Hybrid w/ Lorenz</i> on <i>Roe</i> Movement</option>
+                <option value="example_9">Example of the Overall Simulation Results of <i>Hybrid w/ RA</i> on <i>BLM</i> Movement</option>
+              </select>
+          <!-- Content -->
+          <div id="example_7" class="content-section">
+            <br />
+              <div class="columns is-centered">
+                <!-- Method -->
+                <!-- <br /> -->
+                <figure>
+                  <img src="static/images/metoo.png" alt="metoo">
+                </figure>             
+            </div>
           </div>
-          <br>
-
+          <div id="example_8" class="content-section">
+            <br />
+              <div class="columns is-centered">
+                <!-- Method -->
+                <!-- <br /> -->
+                <figure>
+                  <img src="static/images/roe.png" alt="roe">
+                </figure>             
+            </div>
+          </div>
+          <div id="example_9" class="content-section">
+            <br />
+              <div class="columns is-centered">
+                <!-- Method -->
+                <!-- <br /> -->
+                <figure>
+                  <img src="static/images/blm.png" alt="blm">
+                </figure>             
+            </div>
+          </div>          
   </section>
 
 
 <section class="section" id="BibTeX"></section>
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@article{mou2024unvieling,
-      title   = {Unveiling the Truth and Facilitating Change: Towards Agent-based Large-scale Social Movement Simulation},
-      author  = {Xinyi Mou, Zhongyu Wei and Xuanjing Huang},
-      year    = {2024},
-      journal = {arXiv preprint arXiv: xxxx.xxxxx}
-    }</code></pre>
+    <pre><code>@misc{mou2024unveiling,
+      title={Unveiling the Truth and Facilitating Change: Towards Agent-based Large-scale Social Movement Simulation}, 
+      author={Xinyi Mou and Zhongyu Wei and Xuanjing Huang},
+      year={2024},
+      eprint={2402.16333},
+      archivePrefix={arXiv},
+      primaryClass={cs.CY}
+}</code></pre>
   </div>
 </section>
 
