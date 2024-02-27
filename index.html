@@ -314,62 +314,75 @@
               </p>
             </div>
           </div>
-      
-        </div>
+
       </div>
     </div>
   </section>
 
-  <section class="section" id="thrend">
+  <section class="section" id="example">
+    <!--/ Method -->
+
+    <!-- Data. -->
+    <br />
     <div class="columns is-centered">
-        <div class="column is-full-width">
-          <div style="text-align:center">
-            <h2 class="title is-3">Examples of the Overall Simulation Results</h2>
-          </div>
-          <!-- <div class="columns is-centered">
-              <figure>
-                <img src="static/images/case-metoo.png" alt="fm">
-              </figure>
-          </div> -->
-          <div class="control has-icons-left">
-            <div class="select is-medium is-info is-rounded ">
-              <select id="dropdown" onchange="changeContent()" style="width:auto">
-                <option value="example_7">Example of the Overall Simulation Results of <i>Hybrid w/ BC</i> on <i>Metoo</i> Movement</option>
-                <option value="example_8">Example of the Overall Simulation Results of <i>Hybrid w/ Lorenz</i> on <i>Roe</i> Movement</option>
-                <option value="example_9">Example of the Overall Simulation Results of <i>Hybrid w/ RA</i> on <i>BLM</i> Movement</option>
-              </select>
-          <!-- Content -->
-          <div id="example_7" class="content-section">
-            <br />
-              <div class="columns is-centered">
-                <!-- Method -->
-                <!-- <br /> -->
-                <figure>
-                  <img src="static/images/metoo.png" alt="metoo">
-                </figure>             
+      <div class="column is-full-width">
+        <div style="text-align:center">
+          <h2 class="title is-3">Examples of the Overall Simulation Results</h2>
+        </div>
+        <br />
+
+        <div class="control has-icons-left">
+          <div class="select is-medium is-info is-rounded ">
+            <select id="dropdown2" onchange="changeContent2()" style="width:auto">
+              <option value="example_7">Example of Overall Simulation Results of Hybrid w/ BC on Metoo Movement.</option>
+              <option value="example_8">Example of Overall Simulation Results of Hybrid w/ Lorenz on Roe Movement.</option>
+              <option value="example_9">Example of Overall Simulation Results of Hybrid w/ RA on BLM Movement.</option>
+            </select>
+            <div class="icon is-small is-left">
+              <i class="fas fa-comment-alt"></i>
             </div>
           </div>
-          <div id="example_8" class="content-section" style="display:none">
-            <br />
-              <div class="columns is-centered">
-                <!-- Method -->
-                <!-- <br /> -->
-                <figure>
-                  <img src="static/images/roe.png" alt="roe">
-                </figure>             
-            </div>
+       </div>
+        <!--/ Dropdown -->
+
+        <!-- Content -->
+        <div id="example_7" class="content-section">
+          <br />
+          <div class="columns is-centered">
+            <!-- Method -->
+            <!-- <br /> -->
+            <figure>
+              <img src="static/images/metoo.png" alt="metoo">
+            </figure>
           </div>
-          <div id="example_9" class="content-section" style="display:none">
-            <br />
-              <div class="columns is-centered">
-                <!-- Method -->
-                <!-- <br /> -->
-                <figure>
-                  <img src="static/images/blm.png" alt="blm">
-                </figure>             
-            </div>
-          </div>          
-  </section>
+        </div>
+
+        <div id="example_8" class="content-section"  style="display:none">
+          <br />
+          <div class="columns is-centered">
+            <!-- Method -->
+            <!-- <br /> -->
+            <figure>
+              <img src="static/images/roe.png" alt="roe">
+            </figure>
+          </div>
+        </div>
+
+        <div id="example_9" class="content-section"  style="display:none">
+          <br />
+          <div class="columns is-centered">
+            <!-- Method -->
+            <!-- <br /> -->
+            <figure>
+              <img src="static/images/blm.png" alt="blm">
+            </figure>
+          </div>
+        </div>
+  
+    
+    </div>
+  </div>
+</section>
 
 
 <section class="section" id="BibTeX"></section>
@@ -435,7 +448,17 @@
   }
 </script>
 
+<script>
+  function changeContent2() {
+    const dropdown = document.getElementById("dropdown2");
+    const selected = dropdown.value;
+    const sections = ["example_7", "example_8", "example_9"];
 
+    sections.forEach((section) => {
+      document.getElementById(section).style.display = (section === selected) ? "block" : "none";
+    });
+  }
+</script>
 
 
 </html>
