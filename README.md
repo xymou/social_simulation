@@ -18,3 +18,16 @@ We build an agent architecture by empowering LLMs with the necessary capabilitie
 To comprehensively evaluate the effectiveness of simulation, we consider both micro-level evaluation and macro-level evaluation, focusing on individual user alignment and systemic outcomes respectively.
 - Micro Alignment Evaluation: simulate in single rounds by providing authentic contextual information to each core user agent and assess their decision-making, in terms of *stance*, *content* and *behavior*.
 - Macro System Evaluation: quantify the attitude distribution in a complete multi-round simulation, considering both *static attitude distribution* and *time series* of the average attitude.
+
+## BibTeX
+Please consider citing this paper if you find this repository useful:
+```bash
+@misc{mou2024unveiling,
+      title={Unveiling the Truth and Facilitating Change: Towards Agent-based Large-scale Social Movement Simulation}, 
+      author={Xinyi Mou and Zhongyu Wei and Xuanjing Huang},
+      year={2024},
+      eprint={2402.16333},
+      archivePrefix={arXiv},
+      primaryClass={cs.CY}
+}
+```
