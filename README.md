@@ -2,6 +2,12 @@
 This is the repository for the preprint paper: [Unveiling the Truth and Facilitating Change: Towards Agent-based Large-scale Social Movement Simulation](https://arxiv.org/abs/2402.16333).  
 The webpage can be visited at [https://xymou.github.io/social_simulation/](https://xymou.github.io/social_simulation/).
 
+## Table of Contents
+- [Abstract](#Abstract)
+- [Methodology](#Methodology)
+- [Dataset](#Dataset)
+- [Citation](#Citation)
+
 ## Abstract
 Social media has emerged as a cornerstone of social movements, wielding significant influence in driving societal change. Simulating the response of the public and forecasting the potential impact has become increasingly important. However, existing methods for simulating such phenomena encounter challenges concerning their efficacy and efficiency in capturing the behaviors of social movement participants. In this paper, we introduce a hybrid framework for social media user simulation, wherein users are categorized into two types. Core users are driven by Large Language Models, while numerous ordinary users are modeled by deductive agent-based models. We further construct a Twitter-like environment to replicate their response dynamics following trigger events. Subsequently, we develop a multi-faceted benchmark SoMoSiMu-Bench for evaluation and conduct comprehensive experiments across real-world datasets. Experimental results demonstrate the effectiveness and flexibility of our method.
 
@@ -19,7 +25,10 @@ To comprehensively evaluate the effectiveness of simulation, we consider both mi
 - Micro Alignment Evaluation: simulate in single rounds by providing authentic contextual information to each core user agent and assess their decision-making, in terms of *stance*, *content* and *behavior*.
 - Macro System Evaluation: quantify the attitude distribution in a complete multi-round simulation, considering both *static attitude distribution* and *time series* of the average attitude.
 
-## BibTeX
+## Dataset
+
+
+## Citation
 Please consider citing this paper if you find this repository useful:
 ```bash
 @article{mou2024unveiling,
