@@ -1,5 +1,5 @@
 # 🙌 Unveiling the Truth and Facilitating Change: Towards Agent-based Large-scale Social Movement Simulation
-This repository is the webpage of our paper [Unveiling the Truth and Facilitating Change: Towards Agent-based Large-scale Social Movement Simulation](https://arxiv.org/abs/2402.16333).  
+This is the repository for the preprint paper: [Unveiling the Truth and Facilitating Change: Towards Agent-based Large-scale Social Movement Simulation](https://arxiv.org/abs/2402.16333).  
 The webpage can be visited at [https://xymou.github.io/social_simulation/](https://xymou.github.io/social_simulation/).
 
 ## Abstract
