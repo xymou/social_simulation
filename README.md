@@ -22,12 +22,10 @@ To comprehensively evaluate the effectiveness of simulation, we consider both mi
 ## BibTeX
 Please consider citing this paper if you find this repository useful:
 ```bash
-@misc{mou2024unveiling,
+@article{mou2024unveiling,
       title={Unveiling the Truth and Facilitating Change: Towards Agent-based Large-scale Social Movement Simulation}, 
       author={Xinyi Mou and Zhongyu Wei and Xuanjing Huang},
       year={2024},
-      eprint={2402.16333},
-      archivePrefix={arXiv},
-      primaryClass={cs.CY}
+      journal = {arXiv preprint arXiv: 2402.16333},
 }
 ```
