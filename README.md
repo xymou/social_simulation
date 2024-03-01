@@ -24,7 +24,7 @@ User engagement in social networks often exhibits a Pareto distribution, where t
 We build an agent architecture by empowering LLMs with the necessary capabilities for core user simulation. An overview of the agent's architecture is illustrated in the left part of the Figure. Empowered by LLMs, the agent is equipped with a profile module, a memory module, and an action module.
 - Profile Module:
 - Memory Module:
-- Action Module:
+- Action Module: We consider actions that are highly related to information and attitude propagation, including: <i>post</i>, <i>retweet</i>, <i>reply</i>, <i>like</i>, and <i>do nothing</i>.
 
 ### RQ3: How to Evaluate the Effectiveness of the Simulation?
 To comprehensively evaluate the effectiveness of simulation, we consider both micro-level evaluation and macro-level evaluation, focusing on individual user alignment and systemic outcomes respectively.
