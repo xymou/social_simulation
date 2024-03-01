@@ -38,8 +38,10 @@ To be in compliance with Twitter’s terms of service, we can not publish the ra
 - <i>BLM</i>: from [blm_twitter_corpus](https://github.com/sjgiorgi/blm_twitter_corpus), we further keep the tweets during the events, where the ids can be downloaded at [blm_link](https://drive.google.com/file/d/1HymVETg5SgLJqL1O3bPiT-RcBVSMGEhT/view?usp=sharing).
 
 ## Code
-Coming soon...
-Part of the implementation is based on [AgentVerse](https://github.com/OpenBMB/AgentVerse), many thanks to THUNLP for the open-source resource.  
+Coming soon...  
+
+- For LLM-empowered core users, part of the implementation is based on [AgentVerse](https://github.com/OpenBMB/AgentVerse), many thanks to THUNLP for the open-source resource.
+- For ordinary users supported by conventional ABMs, we use the [mesa](https://mesa.readthedocs.io/en/stable/) library to implement the agent-based models.
 
 ## Citation
 Please consider citing this paper if you find this repository useful:
