@@ -16,7 +16,7 @@ Social media has emerged as a cornerstone of social movements, wielding signific
 ![fm](./static/images/fm.png)
 To handle the challenges in conducting large-scale online social movement simulation, this paper introduces a novel hybrid framework for social media user simulation.  
 ### RQ1: How to Simulate Large-scale Social Movement Participants?
-User engagement in social networks often exhibits a Pareto distribution, where the bulk of content originates from a small fraction of individuals. Thus, those more active and influential such as opinion leaders should be modeled finely, while the silent majority can be controlled by simpler models. The overall framework is illustrated in the Figure, where social media users are divided into **core users** and **ordinary users**. The two types of users are driven by different models, to address the cost and efficiency issues of using thousands of LLMs. 
+User engagement in social networks often exhibits a *Pareto distribution*, where the bulk of content originates from a small fraction of individuals. Thus, those more active and influential such as opinion leaders should be modeled finely, while the silent majority can be controlled by simpler models. The overall framework is illustrated in the Figure, where social media users are divided into **core users** and **ordinary users**. The two types of users are driven by different models, to address the cost and efficiency issues of using thousands of LLMs. 
 - Core users are empowered by large language models.
 - Ordinary users are driven by conventional agent-based models, such as the Bounded Confidence Model.
 
