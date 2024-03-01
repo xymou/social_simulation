@@ -6,6 +6,7 @@ The webpage can be visited at [https://xymou.github.io/social_simulation/](https
 - [Abstract](#Abstract)
 - [Methodology](#Methodology)
 - [Dataset](#Dataset)
+- [Code](#Code)
 - [Citation](#Citation)
 
 ## Abstract
@@ -31,8 +32,14 @@ To comprehensively evaluate the effectiveness of simulation, we consider both mi
 - Macro System Evaluation: quantify the attitude distribution in a complete multi-round simulation, considering both *static attitude distribution* and *time series* of the average attitude.
 
 ## Dataset
+To be in compliance with Twitter’s terms of service, we can not publish the raw data. Instead, we only disclose the original tweet IDs, from which you can filter out the users you want to study, to minimize the privacy risk.  
+- <i>Metoo</i>: from [#metoo Digital Media Collection](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/2SRSKJ), we further keep the tweets during the events, where the ids can be downloaded at [link](https://drive.google.com/file/d/1qQzQAvDH-eLtg1jPTKe6NkToF7Aq1EAA/view?usp=sharing).
+- <i>Roe</i>: from [#RoeOverturned](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/STU0J5&version=1.2), we further keep the tweets during the events, where the ids can be downloaded at [link](https://drive.google.com/file/d/13dkJ_P2JzbrDdJkYdwred260Ps-ym-64/view?usp=sharing).
+- <i>BLM</i>: from [blm_twitter_corpus](https://github.com/sjgiorgi/blm_twitter_corpus), we further keep the tweets during the events, where the ids can be downloaded at [link](https://drive.google.com/file/d/1HymVETg5SgLJqL1O3bPiT-RcBVSMGEhT/view?usp=sharing).
 
-
+## Code
+Part of the implementation is based on [AgentVerse](https://github.com/OpenBMB/AgentVerse), many thanks to THUNLP for the open-source resource.  
+Coming soon...
 
 ## Citation
 Please consider citing this paper if you find this repository useful:
