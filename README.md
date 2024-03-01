@@ -22,8 +22,8 @@ User engagement in social networks often exhibits a Pareto distribution, where t
 
 ### RQ2: How to accurately simulate core users and replicate their behaviors within the community?
 We build an agent architecture by empowering LLMs with the necessary capabilities for core user simulation. An overview of the agent's architecture is illustrated in the left part of the Figure. Empowered by LLMs, the agent is equipped with a profile module, a memory module, and an action module.
-- Profile Module:
-- Memory Module:
+- Profile Module: each agent's profile contains <i>Demographics</i>, <i>Social Traits</i> and <i>Communication Roles</i> initialized from real data.
+- Memory Module: a memory module is integrated to manipulate memories of agents, including three operations - memory writing, memory retrieval and memory reflection.
 - Action Module: We consider actions that are highly related to information and attitude propagation, including: <i>post</i>, <i>retweet</i>, <i>reply</i>, <i>like</i>, and <i>do nothing</i>.
 
 ### RQ3: How to Evaluate the Effectiveness of the Simulation?
