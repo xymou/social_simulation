@@ -15,10 +15,15 @@ Social media has emerged as a cornerstone of social movements, wielding signific
 ![fm](./static/images/fm.png)
 To handle the challenges in conducting large-scale online social movement simulation, this paper introduces a novel hybrid framework for social media user simulation.  
 ### RQ1: How to Simulate Large-scale Social Movement Participants?
-User engagement in social networks often exhibits a Pareto distribution, where the bulk of content originates from a small fraction of individuals. Thus, those more active and influential such as opinion leaders should be modeled finely, while the silent majority can be controlled by simpler models. The overall framework is illustrated in Figure 2, where social media users are divided into **core users** and **ordinary users**. The two types of users are driven by different models, to address the cost and efficiency issues of using thousands of LLMs. Core users are empowered by large language models, while the ordinary users are driven by conventional agent-based models.
+User engagement in social networks often exhibits a Pareto distribution, where the bulk of content originates from a small fraction of individuals. Thus, those more active and influential such as opinion leaders should be modeled finely, while the silent majority can be controlled by simpler models. The overall framework is illustrated in the Figure, where social media users are divided into **core users** and **ordinary users**. The two types of users are driven by different models, to address the cost and efficiency issues of using thousands of LLMs. 
+- Core users are empowered by large language models.
+- Ordinary users are driven by conventional agent-based models, such as the Bounded Confidence Model.
 
 ### RQ2: How to accurately simulate core users and replicate their behaviors within the community?
-We build an agent architecture by empowering LLMs with the necessary capabilities for core user simulation. An overview of the agent's architecture is illustrated in the left part of Figure 2. Empowered by LLMs, the agent is equipped with a profile module, a memory module, and an action module.
+We build an agent architecture by empowering LLMs with the necessary capabilities for core user simulation. An overview of the agent's architecture is illustrated in the left part of the Figure. Empowered by LLMs, the agent is equipped with a profile module, a memory module, and an action module.
+- Profile Module:
+- Memory Module:
+- Action Module:
 
 ### RQ3: How to Evaluate the Effectiveness of the Simulation?
 To comprehensively evaluate the effectiveness of simulation, we consider both micro-level evaluation and macro-level evaluation, focusing on individual user alignment and systemic outcomes respectively.
@@ -26,6 +31,7 @@ To comprehensively evaluate the effectiveness of simulation, we consider both mi
 - Macro System Evaluation: quantify the attitude distribution in a complete multi-round simulation, considering both *static attitude distribution* and *time series* of the average attitude.
 
 ## Dataset
+
 
 
 ## Citation
